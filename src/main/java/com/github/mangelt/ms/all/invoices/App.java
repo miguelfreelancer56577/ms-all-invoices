@@ -2,6 +2,7 @@ package com.github.mangelt.ms.all.invoices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.web.reactive.config.EnableWebFlux;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootApplication
 @EnableWebFlux
 @Slf4j
+@EnableDiscoveryClient
 public class App
 {
 	public static void main( String[] args )
